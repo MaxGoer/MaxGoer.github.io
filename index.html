@@ -1,11 +1,112 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>TEST</title>
+    <head>
+        <title>Задачи по дизассемблированию</title>
         <meta charset="utf-8">
-	</head>
-	<body>
-		<h1>Test page</h1><hr>
-		<p>This is a test page</p>
-	</body>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Custom -->
+        <link rel="stylesheet" href="./style/disasm.css">
+        
+        <script type="text/javascript" src="./jssrc/TasksData.json"></script>
+        <script type="text/javascript" src="./jssrc/disasm.js"></script>
+    </head>
+    <body>
+        
+        <!-- "Cool" header (of course not) -->
+        <header class="container-fluid">
+            <div id="disasm_header" class="container">
+                <h1>DISASM: Задачник</h1>
+                <p>Сборник корявых лабораторок для вуза, который нельзя называть...</p>
+            </div>
+        </header>
+        
+        <!-- Navigation -->
+        <div class="container">
+            <ol class="breadcrumb bg-light">
+                <li class="breadcrumb-item">
+                    <a class="dropdown-toggle" data-toggle="collapse" data-target="#disasmNavLinks">Задачи</a>
+
+                    <!-- Navbar links -->
+                    <div class="collapse navbar-collapse" id="disasmNavLinks">
+                        <ul id="disasm_nav" class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li> 
+                        </ul>
+                    </div> 
+                </li>
+
+                <li id="task_current" class="breadcrumb-item">Задача 1</li>
+            </ol>
+        </div>
+        <hr>
+        
+        
+        
+        <!-- "Content" -->
+        <div class="container" id="task">  
+            <!-- Summary -->
+            <div class="jumbotron">
+                <h5 id="task_title">Чёрное на чёрном</h5><hr>
+                <div id="task_summary" class="container-fluid">
+                    <p>С другой стороны укрепление и развитие структуры требуют от нас анализа форм развития. Задача организации, в особенности же новая модель организационной деятельности позволяет оценить значение форм развития</p>
+                </div>
+                <a id="task_downloads" href="#!" class="btn btn-primary"><span class="fa fa-file"></span> Скачать</a>
+            </div>
+
+            <!-- Description -->
+            <div class="container-fluid">
+                <h5>Описание</h5><hr>
+                <div id="task-description" class="container-fluid">
+                    <p>Повседневная практика показывает, что сложившаяся структура организации способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Равным образом рамки и место обучения кадров способствует подготовки и реализации новых предложений. Задача организации, в особенности же дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки модели развития. С другой стороны рамки и место обучения кадров требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач.</p>
+                </div>
+            </div> 
+        </div>
+        
+
+        <!-- Footer -->
+        <hr>
+        <footer class="page-footer">
+            <!-- Info -->
+            <div class="container" id="footer_info">
+                <div class="row">
+                    <div class="col">
+                        <p><b>Max Goer</b></p>
+                        <p><span class="fa fa-envelope"></span> prixodko_maks@mail.ru</p>
+                    </div>
+                    <div class="col">
+                        <p>Архитектура ЭВМ и систем.</p>
+                        <p>Введение в реверс-инжениринг, дизассемблирование и вот это вот всё.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-copyright text-center">
+                Сделано на коленке<br>2018
+            </div>
+        </footer> 
+    </body>
 </html>

@@ -1,0 +1,42 @@
+#footer_info {
+    max-width: 540px;
+}
+
+#task {
+    margin: 0 auto;
+}
+
+#disasm_header {
+    padding: 24px;
+    border-radius: 24px;
+    overflow: hidden;
+    
+    font-style: italic;
+    color: #888;
+}
+
+#disasm_header h1 {
+    text-shadow: 1px 1px 10px #007bff;
+    color: #fff;
+    font-style: italic;
+}
+
+#task_summary {
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+#task-description {
+    padding: 0;
+}
+
+
+@media only screen and (max-width: 440px) {
+    #page_title {
+        display: none;
+    }
+    
+    .navbar {
+        justify-content: center;
+    }
+}
