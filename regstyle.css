@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+.t-reg-form {
+    margin: auto;
+    max-width: 540px;
+}
+
+
+html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex-grow: 100;
+    display: flex;
+}
